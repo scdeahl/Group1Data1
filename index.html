@@ -3,324 +3,67 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Group 1 - Urban Designers</title>
+    <title>Data 1 - Assignment 2 Graphs</title>
     <style>
-      /* General reset and base styles */
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
       body {
-        font-family: "Poppins", sans-serif;
-        background: #101820; /* Dark background */
-        color: #fff;
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      h1,
+      h2 {
+        color: #4caf50;
+      }
+      p {
+        font-size: 16px;
         line-height: 1.6;
-        min-height: 100vh;
-        overflow-x: hidden;
-        position: relative;
       }
-
-      /* Navigation Bar */
-      nav {
-        background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent dark bar */
-        padding: 15px;
-        text-align: center;
-        position: sticky;
-        top: 0;
-        z-index: 100;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      .graph {
+        margin-bottom: 30px;
       }
-
-      nav a {
-        color: #5ae09f;
-        margin: 0 20px;
-        font-size: 1.2em;
-        text-decoration: none;
-        text-transform: uppercase;
-        letter-spacing: 0.1em;
-        transition: color 0.3s ease;
-      }
-
-      nav a:hover {
-        color: #ff007f;
-      }
-
-      /* Section General Styling */
-      .section {
-        min-height: 100vh;
-        padding: 100px 20px; /* Increased padding for section separation */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        position: relative;
-        z-index: 10; /* Ensure text is above particles */
-      }
-
-      /* Animated Text */
-      .animated-text {
-        font-size: 3em;
-        color: #00ffcc;
-        text-shadow: 0 0 10px #00ffcc, 0 0 20px #d83687, 0 0 40px #00ffcc;
-        margin-bottom: 20px;
-        position: relative;
-        animation: glow 2s infinite;
-      }
-
-      @keyframes glow {
-        0% {
-          text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc, 0 0 40px #00ffcc;
-        }
-        50% {
-          text-shadow: 0 0 20px #00ffcc, 0 0 40px #00ffcc, 0 0 60px #00ffcc;
-        }
-        100% {
-          text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc, 0 0 40px #00ffcc;
-        }
-      }
-
-      .section h1 {
-        font-size: 2.5em;
-        margin-bottom: 20px;
-        color: #ffffff;
-        text-shadow: 0 1px 5px rgba(255, 255, 255, 0.2);
-      }
-
-      .section p {
-        font-size: 1.4em;
-        color: #dddddd;
-        max-width: 800px;
-        line-height: 1.8;
-      }
-
-      /* Divider Line between sections */
-      hr {
-        width: 60%;
-        border: 0;
-        border-top: 3px solid rgba(255, 255, 255, 0.2);
-        margin: 40px auto;
-      }
-
-      /* Placeholder for Image */
-      .image-placeholder {
-        background-color: transparent; /* Remove background color */
-        width: 100%;
-        max-width: 600px; /* Adjust max-width for size */
-        height: 300px; /* Adjust height */
-        margin-top: 30px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #fff;
-        font-size: 1em; /* Adjusted font-size */
-        border-radius: 10px; /* Rounded corners, if desired */
-        border: none; /* Removed border */
-        overflow: hidden; /* Ensure image doesn't overflow the container */
-      }
-
-      .image-placeholder img {
-        width: 100%;
+      img {
+        max-width: 100%;
         height: auto;
-      }
-
-      /* Responsive design */
-      @media (max-width: 768px) {
-        .section h1 {
-          font-size: 2em;
-        }
-
-        .section p {
-          font-size: 1.1em;
-        }
-
-        .animated-text {
-          font-size: 2.2em;
-        }
-
-        .image-placeholder {
-          height: 120px; /* Adjust height for smaller screens */
-        }
-      }
-
-      /* Particles background */
-      #particles-js {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 1;
-        background-color: #000;
+        border: 1px solid #ddd;
+        padding: 5px;
+        margin-top: 10px;
       }
     </style>
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
-    <!-- Particles.js library -->
-    <div id="particles-js"></div>
+    <h1>Data 1 - Assignment 2: Visualizations</h1>
+    <p>Group 1: Maria Chatzigeorgiou, Sophie Deahl, Balint Rekasi, Kian Smit</p>
 
-    <!-- Navigation Bar -->
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About Us</a>
-      <a href="#projects">Projects</a>
-    </nav>
+    <p>
+      In this assignment, we plotted various graphs using Python and the data
+      provided. Below are some of the graphs we created, along with brief
+      explanations of what each graph represents.
+    </p>
 
-    <!-- Home Section -->
-    <section id="home" class="section">
-      <h1 class="animated-text">Github Page of Group 1</h1>
-      <p>Where we show you our journey into coding</p>
-      <div class="image-placeholder">
-        <img src="images/0_oV6NUnvgoOT-0tKF.jpg" />
-      </div>
-    </section>
+    <!-- Graph 1 -->
+    <div class="graph">
+      <h2>Graph 1: Histogram</h2>
+      <p>This histogram shows...</p>
+      <img
+        src="images/Histogram.png"
+        alt="Distribution of Population Over Time"
+      />
+    </div>
 
-    <hr />
+    <!-- Graph 2 -->
+    <div class="graph">
+      <h2>Graph 2: Kernel (KDE)</h2>
+      <p>The kernel shows...</p>
+      <img src="images/Kernel.png" alt="Bar Chart of Monthly Sales" />
+    </div>
 
-    <!-- About Us Section -->
-    <section id="about" class="section">
-      <h1>About Us</h1>
-      <p>
-        We are Group 1. A team of urban planners, a designer and a
-        transportation expert <br />
-        We are exploring the intersection of coding, data, engineering & design
-        <br />
-        <br />
-        Meet the team: <br />
-        Maria Chatzigeorgiou <br />
-        Sophie Deahl <br />
-        Balint Rekasi <br />
-        Kian Smit <br />
-      </p>
-    </section>
-
-    <hr />
-
-    <!-- Projects Section -->
-    <section id="projects" class="section">
-      <h1>Projects</h1>
-      <p>To be continued! Stay tuned for our projects.</p>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-      <p>© 2024 Group 1 | Data 1</p>
-    </footer>
-
-    <!-- Particles.js Script -->
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script>
-      particlesJS("particles-js", {
-        particles: {
-          number: {
-            value: 80,
-            density: {
-              enable: true,
-              value_area: 800,
-            },
-          },
-          color: {
-            value: "#00ffcc",
-          },
-          shape: {
-            type: "circle",
-            stroke: {
-              width: 0,
-              color: "#000000",
-            },
-            polygon: {
-              nb_sides: 5,
-            },
-          },
-          opacity: {
-            value: 0.5,
-            random: false,
-            anim: {
-              enable: false,
-              speed: 1,
-              opacity_min: 0.1,
-              sync: false,
-            },
-          },
-          size: {
-            value: 3,
-            random: true,
-            anim: {
-              enable: false,
-              speed: 40,
-              size_min: 0.1,
-              sync: false,
-            },
-          },
-          line_linked: {
-            enable: true,
-            distance: 150,
-            color: "#00ffcc",
-            opacity: 0.4,
-            width: 1,
-          },
-          move: {
-            enable: true,
-            speed: 6,
-            direction: "none",
-            random: false,
-            straight: false,
-            out_mode: "out",
-            bounce: false,
-            attract: {
-              enable: false,
-              rotateX: 600,
-              rotateY: 1200,
-            },
-          },
-        },
-        interactivity: {
-          detect_on: "canvas",
-          events: {
-            onhover: {
-              enable: true,
-              mode: "repulse",
-            },
-            onclick: {
-              enable: true,
-              mode: "push",
-            },
-            resize: true,
-          },
-          modes: {
-            grab: {
-              distance: 400,
-              line_linked: {
-                opacity: 1,
-              },
-            },
-            bubble: {
-              distance: 400,
-              size: 40,
-              duration: 2,
-              opacity: 8,
-              speed: 3,
-            },
-            repulse: {
-              distance: 200,
-              duration: 0.4,
-            },
-            push: {
-              particles_nb: 4,
-            },
-            remove: {
-              particles_nb: 2,
-            },
-          },
-        },
-        retina_detect: true,
-      });
-    </script>
+    <!-- Graph 3 -->
+    <div class="graph">
+      <h2>Graph 3: Bar Chart</h2>
+      <p>This chart shows...</p>
+      <img
+        src="images/Barchart.png"
+        alt="Age Distribution of Survey Respondents"
+      />
+    </div>
   </body>
 </html>
