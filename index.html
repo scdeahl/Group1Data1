@@ -8,16 +8,36 @@
       body {
         font-family: Arial, sans-serif;
         margin: 20px;
-        background-color: black; 
-        color: white; 
+        background-color: black;
+        color: white;
       }
-      h1,
+      h1 {
+        font-size: 2.5em; /* Larger font size for main headings */
+        color: #4caf50;
+      }
       h2 {
         color: #4caf50;
       }
       p {
         font-size: 16px;
         line-height: 1.6;
+      }
+      .navbar {
+        background-color: #333;
+        overflow: hidden;
+        margin-bottom: 20px;
+      }
+      .navbar a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      .navbar a:hover {
+        background-color: #ddd;
+        color: black;
       }
       .graph {
         margin-bottom: 30px;
@@ -32,19 +52,30 @@
     </style>
   </head>
   <body>
-    <h1>Data 1 - Assignment 2: Visualizations</h1>
-    <p>Group 1: Maria Chatzigeorgiou, Sophie Deahl, Balint Rekasi, Kian Smit</p>
+    <div class="navbar">
+      <a href="#assignment2">Assignment 2</a>
+      <a href="#assignment3">Assignment 3</a>
+      <a href="#about">About</a>
+    </div>
+
+    <h1 id="assignment2">Assignment 2</h1>
+   
 
     <p>
-     In this assignment, we plotted various graphs using the Pandas and Seaborn libraries and the provided data. Below are some of the graphs we created, along with brief explanations of what each graph represents.
+      In this assignment, we plotted various graphs using the Pandas and Seaborn
+      libraries and the provided data. Below are some of the graphs we created,
+      along with brief explanations of what each graph represents.
     </p>
 
     <!-- Graph 1 -->
     <div class="graph">
       <h2>Graph 1: Histogram</h2>
-      <p>This histogram displays the frequency of occurrences of casualties per month, within the range of NATO official figures.</p>
+      <p>
+        This histogram displays the frequency of occurrences of casualties per
+        month, within the range of NATO official figures.
+      </p>
       <img
-        src="images/1.png"
+        src="images/histogram.png"
         alt="Distribution of Population Over Time"
       />
     </div>
@@ -52,28 +83,61 @@
     <!-- Graph 2 -->
     <div class="graph">
       <h2>Graph 2: KDE</h2>
-      <p>A KDE (Kernel Density Estimation) is the smooth version of the histogram. This KDE displays again the occurences of casualties in the Afghan War, but in this case civilians. </p>
-      <img src="images/2.png" alt="Bar Chart of Monthly Sales" />
+      <p>
+        A KDE (Kernel Density Estimation) is the smooth version of the
+        histogram. This KDE displays again the occurrences of casualties in the
+        Afghan War, but in this case civilians.
+      </p>
+      <img src="images/KDE.png" alt="Bar Chart of Monthly Sales" />
     </div>
 
     <!-- Graph 3 -->
     <div class="graph">
       <h2>Graph 3: Bar Plot</h2>
-      <p>This bar plot displays the total number of casualties (including both civilians and Afghan forces) on a monthly basis over a six-year period during the Afghan War.</p>
+      <p>
+        This bar plot displays the total number of casualties (including both
+        civilians and Afghan forces) on a monthly basis over a six-year period
+        during the Afghan War.
+      </p>
       <img
-        src="images/bp5.png"
+        src="images/Barplot.png"
         alt="Age Distribution of Survey Respondents"
       />
     </div>
 
-       <!-- Graph 4 -->
+    <!-- Graph 4 -->
     <div class="graph">
       <h2>Graph 4: Line Plot</h2>
-      <p>The line plot displays the same information as the bar plot, but it emphasizes casualties over time, making it easier to see patterns or fluctuations. </p>
+      <p>
+        The line plot displays the same information as the bar plot, but it
+        emphasizes casualties over time, making it easier to see patterns or
+        fluctuations.
+      </p>
       <img
-        src="images/kde5.png"
+        src="images/lineplot.png"
         alt="Age Distribution of Survey Respondents"
       />
+    </div>
+
+    <div id="assignment3">
+      <h1>Assignment 3</h1>
+      
+    </div>
+
+    <div id="notebook">
+        
+        <iframe src="html/Assignment 3_Group1.html" width="100%" height="600px"></iframe> 
+    </div>
+
+    <div id="about">
+      <h1>About</h1>
+      <p>
+        <p>Group 1: <p>
+        </p>Maria Chatzigeorgiou <p>
+        </p>Sophie Deahl <p>
+        </p> Balint Rekasi <p>
+        </p> Kian Smit</p>
+      </p>
     </div>
   </body>
 </html>
