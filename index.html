@@ -13,86 +13,70 @@
       }
 
       body {
-        font-family: "Poppins", sans-serif;
-        background: #101820; /* Dark background */
-        color: #fff;
-        line-height: 1.6;
-        min-height: 100vh;
-        overflow-x: hidden;
-        position: relative;
+        font-family: Arial, sans-serif;
+        background-color: black; /* Dark background */
+        color: white;
+        margin: 20px;
       }
 
       /* Navigation Bar */
       nav {
-        background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent dark bar */
-        padding: 15px;
+        background-color: #333; /* Dark background for navbar */
+        overflow: hidden;
+        padding: 15px 0;
         text-align: center;
-        position: sticky;
-        top: 0;
-        z-index: 100;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
       }
 
       nav a {
-        color: #5ae09f;
-        margin: 0 20px;
-        font-size: 1.2em;
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
         text-decoration: none;
-        text-transform: uppercase;
-        letter-spacing: 0.1em;
-        transition: color 0.3s ease;
+        font-size: 1.2em;
       }
 
       nav a:hover {
-        color: #ff007f;
+        background-color: #ddd; /* Light background on hover */
+        color: black;
       }
 
       /* Section General Styling */
       .section {
-        min-height: 100vh;
-        padding: 100px 20px; /* Increased padding for section separation */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        padding: 60px 20px;
         text-align: center;
-        position: relative;
-        z-index: 10; /* Ensure text is above particles */
       }
 
-      /* Animated Text */
-      .animated-text {
-        font-size: 3em;
-        color: #00ffcc;
-        text-shadow: 0 0 10px #00ffcc, 0 0 20px #d83687, 0 0 40px #00ffcc;
+      h1 {
+        font-size: 2.5em; /* Larger font size for main headings */
+        color: #4caf50;
         margin-bottom: 20px;
-        position: relative;
-        animation: glow 2s infinite;
       }
 
-      @keyframes glow {
-        0% {
-          text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc, 0 0 40px #00ffcc;
-        }
-        50% {
-          text-shadow: 0 0 20px #00ffcc, 0 0 40px #00ffcc, 0 0 60px #00ffcc;
-        }
-        100% {
-          text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc, 0 0 40px #00ffcc;
-        }
+      h2 {
+        color: #4caf50;
+        font-size: 2em;
       }
 
-      .section h1 {
-        font-size: 2.5em;
-        margin-bottom: 20px;
-        color: #ffffff;
-        text-shadow: 0 1px 5px rgba(255, 255, 255, 0.2);
+      p {
+        font-size: 16px;
+        line-height: 1.6;
       }
 
-      .section p {
-        font-size: 1.4em;
-        color: #dddddd;
-        max-width: 800px;
-        line-height: 1.8;
+      /* Image Placeholder Styling */
+      .image-placeholder {
+        width: 100%;
+        max-width: 600px;
+        margin: 20px auto;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        border: 1px solid #ddd;
+        padding: 5px;
       }
 
       /* Divider Line between sections */
@@ -103,57 +87,23 @@
         margin: 40px auto;
       }
 
-      /* Placeholder for Image */
-      .image-placeholder {
-        background-color: transparent; /* Remove background color */
-        width: 100%;
-        max-width: 600px; /* Adjust max-width for size */
-        height: 300px; /* Adjust height */
-        margin-top: 30px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #fff;
-        font-size: 1em; /* Adjusted font-size */
-        border-radius: 10px; /* Rounded corners, if desired */
-        border: none; /* Removed border */
-        overflow: hidden; /* Ensure image doesn't overflow the container */
-      }
-
-      .image-placeholder img {
-        width: 100%;
-        height: auto;
-      }
-
       /* Responsive design */
       @media (max-width: 768px) {
-        .section h1 {
+        h1 {
           font-size: 2em;
         }
 
-        .section p {
-          font-size: 1.1em;
-        }
-
-        .animated-text {
-          font-size: 2.2em;
+        h2 {
+          font-size: 1.5em;
         }
 
         .image-placeholder {
           height: 120px; /* Adjust height for smaller screens */
         }
       }
-
-
     </style>
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
-
     <!-- Navigation Bar -->
     <nav>
       <a href="#home">Home</a>
@@ -162,14 +112,12 @@
       <a href="#about">About</a>
     </nav>
 
-
-
     <!-- Home Section -->
     <section id="home" class="section">
-      <h1 class="animated-text">Github Page of Group 1</h1>
+      <h1>Github Page of Group 1</h1>
       <p>Where we show you our journey into coding</p>
       <div class="image-placeholder">
-        <img src="images/0_oV6NUnvgoOT-0tKF.jpg" />
+        <img src="images/0_oV6NUnvgoOT-0tKF.jpg" alt="Group Image" />
       </div>
     </section>
 
@@ -179,31 +127,20 @@
     <section id="about" class="section">
       <h1>About Us</h1>
       <p>
-        We are Group 1. A team of urban planners, a designer and a
-        transportation expert <br />
-        We are exploring the intersection of coding, data, engineering & design
-        <br />
-        <br />
-        Meet the team: <br />
-        Maria Chatzigeorgiou <br />
-        Sophie Deahl <br />
-        Balint Rekasi <br />
-        Kian Smit <br />
+  
+    Group 1: 
+        <br />Maria Chatzigeorgiou
+        <br />Sophie Deahl
+        <br />Balint Rekasi
+        <br />Kian Smit
       </p>
     </section>
 
     <hr />
 
-    <!-- Projects Section -->
-    <section id="projects" class="section">
-      <h1>Projects</h1>
-      <p>To be continued! Stay tuned for our projects.</p>
-    </section>
-
     <!-- Footer -->
     <footer>
       <p>© 2024 Group 1 | Data 1</p>
     </footer>
-
   </body>
 </html>
