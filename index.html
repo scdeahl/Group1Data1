@@ -65,18 +65,18 @@ nav a:hover {
         font-size: 16px;
         line-height: 1.6;
       }
-
-    /* Styling for Image Grid */
-      .image-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr; /* 2 columns */
-        gap: 2px; /* Space between images */
-        justify-content: center;
-        align-items: center;
-        margin: 20px auto;
-      }
-
       
+  /* Styling for Image Grid */
+  .image-grid {
+    display: grid;
+    grid-template-columns: auto auto; /* Use auto to fit the columns closely */
+    column-gap: 10px; /* Reduced space between the columns */
+    row-gap: 10px; /* Space between rows */
+    justify-content: center; /* Center the grid container */
+    align-items: center;
+    margin: 20px auto;
+  }
+
       .image-item {
         text-align: center;
       }
