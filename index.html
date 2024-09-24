@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Group 1 - Urban Designers</title>
+    <title>Group 1 - Data 1</title>
     <style>
-      /* General reset and base styles */
+  
       * {
         margin: 0;
         padding: 0;
@@ -13,86 +13,89 @@
       }
 
       body {
-        font-family: "Poppins", sans-serif;
-        background: #101820; /* Dark background */
-        color: #fff;
-        line-height: 1.6;
-        min-height: 100vh;
-        overflow-x: hidden;
-        position: relative;
+        font-family: Arial, sans-serif;
+        background-color: black; /* Dark background */
+        color: white;
+        margin: 20px;
       }
 
-      /* Navigation Bar */
-      nav {
-        background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent dark bar */
-        padding: 15px;
-        text-align: center;
-        position: sticky;
-        top: 0;
-        z-index: 100;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-      }
+     /* Navigation Bar */
+nav {
+  background-color: #333;
+  display: flex; /* Use Flexbox */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  padding: 15px 0;
+  margin-bottom: 20px;
+}
 
-      nav a {
-        color: #5ae09f;
-        margin: 0 20px;
-        font-size: 1.2em;
-        text-decoration: none;
-        text-transform: uppercase;
-        letter-spacing: 0.1em;
-        transition: color 0.3s ease;
-      }
+nav a {
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: background-color 0.3s, color 0.3s; 
+}
 
-      nav a:hover {
-        color: #ff007f;
-      }
+nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
 
       /* Section General Styling */
       .section {
-        min-height: 100vh;
-        padding: 100px 20px; /* Increased padding for section separation */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        padding: 60px 20px;
         text-align: center;
-        position: relative;
-        z-index: 10; /* Ensure text is above particles */
       }
 
-      /* Animated Text */
-      .animated-text {
-        font-size: 3em;
-        color: #00ffcc;
-        text-shadow: 0 0 10px #00ffcc, 0 0 20px #d83687, 0 0 40px #00ffcc;
+      h1 {
+        font-size: 2.5em; 
+        color: #4caf50;
         margin-bottom: 20px;
-        position: relative;
-        animation: glow 2s infinite;
       }
 
-      @keyframes glow {
-        0% {
-          text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc, 0 0 40px #00ffcc;
-        }
-        50% {
-          text-shadow: 0 0 20px #00ffcc, 0 0 40px #00ffcc, 0 0 60px #00ffcc;
-        }
-        100% {
-          text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc, 0 0 40px #00ffcc;
-        }
+      h2 {
+        color: #4caf50;
+        font-size: 2em;
       }
 
-      .section h1 {
-        font-size: 2.5em;
-        margin-bottom: 20px;
-        color: #ffffff;
-        text-shadow: 0 1px 5px rgba(255, 255, 255, 0.2);
+      p {
+        font-size: 16px;
+        line-height: 1.6;
+      }
+      
+  /* Styling for Image Grid */
+  .image-grid {
+    display: grid;
+    grid-template-columns: auto auto; /* auto fits the columns closely */
+    column-gap: 10px; /* space between pictures
+    row-gap: 10px; /* space between rows */
+    justify-content: center; /* center the pictures */
+    align-items: center;
+    margin: 20px auto;
+  }
+
+      .image-item {
+        text-align: center;
       }
 
-      .section p {
-        font-size: 1.4em;
-        color: #dddddd;
-        max-width: 800px;
-        line-height: 1.8;
+      /* Set images to be 4x4 cm */
+      img {
+        width: 4cm; 
+        height: 4cm; 
+        border: 1px solid #ddd;
+        padding: 5px;
+        object-fit: cover; 
+        filter: grayscale(100%) brightness(1.2); /* adjust darkness pictures */
+
+      }
+
+      .person-name {
+        margin-top: 10px;
+        font-size: 1.1em;
+        color: #fff;
       }
 
       /* Divider Line between sections */
@@ -103,107 +106,61 @@
         margin: 40px auto;
       }
 
-      /* Placeholder for Image */
-      .image-placeholder {
-        background-color: transparent; /* Remove background color */
-        width: 100%;
-        max-width: 600px; /* Adjust max-width for size */
-        height: 300px; /* Adjust height */
-        margin-top: 30px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #fff;
-        font-size: 1em; /* Adjusted font-size */
-        border-radius: 10px; /* Rounded corners, if desired */
-        border: none; /* Removed border */
-        overflow: hidden; /* Ensure image doesn't overflow the container */
-      }
-
-      .image-placeholder img {
-        width: 100%;
-        height: auto;
-      }
-
       /* Responsive design */
       @media (max-width: 768px) {
-        .section h1 {
+        h1 {
           font-size: 2em;
         }
 
-        .section p {
-          font-size: 1.1em;
-        }
-
-        .animated-text {
-          font-size: 2.2em;
+        h2 {
+          font-size: 1.5em;
         }
 
         .image-placeholder {
-          height: 120px; /* Adjust height for smaller screens */
+          height: 120px; /*  height smaller screens */
         }
       }
-
-
     </style>
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
-
     <!-- Navigation Bar -->
     <nav>
       <a href="#home">Home</a>
       <a href="assignment2.html">Assignment 2</a>
       <a href="assignment3.html">Assignment 3</a>
-      <a href="#about">About</a>
     </nav>
-
-
 
     <!-- Home Section -->
     <section id="home" class="section">
-      <h1 class="animated-text">Github Page of Group 1</h1>
-      <p>Where we show you our journey into coding</p>
-      <div class="image-placeholder">
-        <img src="images/0_oV6NUnvgoOT-0tKF.jpg" />
+      <h1>Group 1</h1>
+     
+      <div class="image-grid">
+        <!-- First Row -->
+        <div class="image-item">
+          <img src="images/maria.jpeg" alt="Maria Chatzigeorgiou" />
+          <p class="person-name">Maria Chatzigeorgiou</p>
+        </div>
+        <div class="image-item">
+          <img src="images/sophie.png" alt="Sophie Deahl" />
+          <p class="person-name">Sophie Deahl</p>
+        </div>
+        <!-- Second Row -->
+        <div class="image-item">
+          <img src="images/Balint.jpeg" alt="Balint Rekasi" />
+          <p class="person-name">Balint Rekasi</p>
+        </div>
+        <div class="image-item">
+          <img src="images/kian.jpeg" alt="Kian Smit" />
+          <p class="person-name">Kian Smit</p>
+        </div>
       </div>
     </section>
 
     <hr />
 
-    <!-- About Us Section -->
-    <section id="about" class="section">
-      <h1>About Us</h1>
-      <p>
-        We are Group 1. A team of urban planners, a designer and a
-        transportation expert <br />
-        We are exploring the intersection of coding, data, engineering & design
-        <br />
-        <br />
-        Meet the team: <br />
-        Maria Chatzigeorgiou <br />
-        Sophie Deahl <br />
-        Balint Rekasi <br />
-        Kian Smit <br />
-      </p>
-    </section>
-
-    <hr />
-
-    <!-- Projects Section -->
-    <section id="projects" class="section">
-      <h1>Projects</h1>
-      <p>To be continued! Stay tuned for our projects.</p>
-    </section>
-
     <!-- Footer -->
     <footer>
       <p>© 2024 Group 1 | Data 1</p>
     </footer>
-
   </body>
 </html>
