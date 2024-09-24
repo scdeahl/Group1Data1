@@ -70,21 +70,24 @@ nav a:hover {
       .image-grid {
         display: grid;
         grid-template-columns: 1fr 1fr; /* 2 columns */
-        gap: 20px; /* Space between images */
+        gap: 10px; /* Space between images */
         justify-content: center;
         align-items: center;
         margin: 20px auto;
       }
 
+      
       .image-item {
         text-align: center;
       }
 
+      /* Set images to be 4x4 cm */
       img {
-        max-width: 100%;
-        height: auto;
+        width: 4cm; /* Fixed width */
+        height: 4cm; /* Fixed height */
         border: 1px solid #ddd;
         padding: 5px;
+        object-fit: cover; /* Ensure the image fits within the dimensions */
       }
 
       .person-name {
