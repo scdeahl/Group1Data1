@@ -66,11 +66,18 @@ nav a:hover {
         line-height: 1.6;
       }
 
-      /* Image Placeholder Styling */
-      .image-placeholder {
-        width: 100%;
-        max-width: 400px;
+    /* Styling for Image Grid */
+      .image-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* 2 columns */
+        gap: 20px; /* Space between images */
+        justify-content: center;
+        align-items: center;
         margin: 20px auto;
+      }
+
+      .image-item {
+        text-align: center;
       }
 
       img {
@@ -78,6 +85,12 @@ nav a:hover {
         height: auto;
         border: 1px solid #ddd;
         padding: 5px;
+      }
+
+      .person-name {
+        margin-top: 10px;
+        font-size: 1.1em;
+        color: #fff;
       }
 
       /* Divider Line between sections */
@@ -117,8 +130,25 @@ nav a:hover {
     <section id="home" class="section">
       <h1>Data 1 - Group 1</h1>
      
-      <div class="image-placeholder">
-        <img src="images/0_oV6NUnvgoOT-0tKF.jpg" alt="Group Image" />
+      <div class="image-grid">
+        <!-- First Row -->
+        <div class="image-item">
+          <img src="images/maria.jpg" alt="Maria Chatzigeorgiou" />
+          <p class="person-name">Maria Chatzigeorgiou</p>
+        </div>
+        <div class="image-item">
+          <img src="images/sophie.jpg" alt="Sophie Deahl" />
+          <p class="person-name">Sophie Deahl</p>
+        </div>
+        <!-- Second Row -->
+        <div class="image-item">
+          <img src="images/balint.jpg" alt="Balint Rekasi" />
+          <p class="person-name">Balint Rekasi</p>
+        </div>
+        <div class="image-item">
+          <img src="images/kian.jpg" alt="Kian Smit" />
+          <p class="person-name">Kian Smit</p>
+        </div>
       </div>
     </section>
 
