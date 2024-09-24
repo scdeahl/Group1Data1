@@ -35,7 +35,7 @@ nav a {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 1.2em;
-  transition: background-color 0.3s, color 0.3s; /* Optional smooth transition */
+  transition: background-color 0.3s, color 0.3s; 
 }
 
 nav a:hover {
@@ -69,10 +69,10 @@ nav a:hover {
   /* Styling for Image Grid */
   .image-grid {
     display: grid;
-    grid-template-columns: auto auto; /* Use auto to fit the columns closely */
-    column-gap: 10px; /* Reduced space between the columns */
-    row-gap: 10px; /* Space between rows */
-    justify-content: center; /* Center the grid container */
+    grid-template-columns: auto auto; /* auto fits the columns closely */
+    column-gap: 10px; /* space between pictures
+    row-gap: 10px; /* space between rows */
+    justify-content: center; /* center the pictures */
     align-items: center;
     margin: 20px auto;
   }
@@ -83,12 +83,12 @@ nav a:hover {
 
       /* Set images to be 4x4 cm */
       img {
-        width: 4cm; /* Fixed width */
-        height: 4cm; /* Fixed height */
+        width: 4cm; 
+        height: 4cm; 
         border: 1px solid #ddd;
         padding: 5px;
-        object-fit: cover; /* Ensure the image fits within the dimensions */
-        filter: grayscale(100%); /* Apply black and white filter */
+        object-fit: cover; 
+        filter: grayscale(100%) brightness(1.2); /* adjust darkness pictures */
 
       }
 
@@ -117,7 +117,7 @@ nav a:hover {
         }
 
         .image-placeholder {
-          height: 120px; /* Adjust height for smaller screens */
+          height: 120px; /*  height smaller screens */
         }
       }
     </style>
